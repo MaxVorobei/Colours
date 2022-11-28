@@ -1,4 +1,10 @@
-const cols = document.querySelectorAll('.col');
+const cols = document.querySelectorAll('.col'),
+      info = document.querySelector('#info');
+
+console.log(info);
+info.addEventListener('click', ()=> {
+   info.style.display = 'none';
+})
 
 document.addEventListener('keydown', event => {
    event.preventDefault();
